@@ -30,7 +30,7 @@ function getWeather() { // when readystate changes
             document.getElementById("maxtemp").innerHTML = Max;
             document.getElementById("wind").innerHTML = Wind;
             document.getElementById("humidity").innerHTML = Humid;
-            if(showIcon){document.getElementById("icon").src = "http://openweathermap.org/img/wn/" + Icon + "@2x.pngIcon";}
+            if(showIcon){document.getElementById("icon").src = "http://openweathermap.org/img/wn/";}
         }
 
         var current = new Forcast(json.main.temp, json.weather[0].description, json.weather[0].icon, json.wind.speed, json.main.temp_max, json.main.temp_min, json.main.humidity );
